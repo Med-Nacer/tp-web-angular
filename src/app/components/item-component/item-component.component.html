@@ -1,0 +1,11 @@
+<span 
+    (click)="selectItem()"
+>
+    <img src="{{person.path | imagePath}}"
+    width="80px"
+    height="80px"
+    class="rounded-circle"
+    alt="{{person.path}}"
+    >
+    <li>{{person.lastName + " " + person.firstName}}</li>
+</span>

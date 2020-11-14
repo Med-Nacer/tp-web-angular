@@ -1,0 +1,5 @@
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let person of persons">
+        <app-item-component [person]="person" (selectedPersonEmitter)="sendPerson($event)"></app-item-component>
+    </li>
+</ul>

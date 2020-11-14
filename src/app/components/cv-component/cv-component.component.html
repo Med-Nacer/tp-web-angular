@@ -1,0 +1,8 @@
+<div class="row">
+    <div class="col-4">
+        <app-list-component (selectedPersonEmitter)="getPerson($event)"></app-list-component>
+    </div>
+    <div class="col-8">
+        <app-detail-component [person]="currPerson"></app-detail-component>
+    </div>
+</div>
